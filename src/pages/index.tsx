@@ -12,8 +12,8 @@ export default function Home() {
           <title>Pizzapp - Faça seu login!</title>
       </Head>
 
-      <div className={styles.containerCenter}>
-          <Image src={logoImg} alt="Logo Pizzapp" />
+      <div className={styles.containercenter}>
+          <Image className={styles.image} src={logoImg} alt="Logo Pizzapp" />
 
           <div className={styles.login}>
               <form>
@@ -34,6 +34,8 @@ export default function Home() {
                   Acessar
                 </Button>
               </form>
+
+              <a className={styles.text}>Não pussui uma conta? Cadastre-se!</a>
           </div>
       </div>
     </>
