@@ -6,6 +6,7 @@ import styles from "../../../styles/home.module.scss"
 import logoImg from "../../../public/logo.png"
 import { Input } from "../../components/ui/Input"
 import { Button } from "../../components/ui/Button" 
+import { toast } from 'react-toastify'
 
 import Link from "next/link"
 
@@ -24,7 +25,7 @@ export default function SignUp() {
     event.preventDefault();
 
     if(name === "" || email === "" || password === ""){
-        alert("Prencha os campos corretamente!")
+        toast.error("Prencha os campos corretamente!")
         return;
     }
 
