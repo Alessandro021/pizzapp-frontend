@@ -1,4 +1,4 @@
-import { createContext, ReactNode, useState } from "react";
+import { createContext, ReactNode, useState, useEffect } from "react";
 
 import { destroyCookie, setCookie, parseCookies } from 'nookies'
 import Router from "next/router";
@@ -50,6 +50,25 @@ export function AuthProvider({ children }: AuthProviderProps){
 
     const [user, setUser] = useState<UserProps>();
     const isAuthenticated = !!user
+
+    useEffect(() => {
+        //TENTAR PEGAR ALGO NO COOKIE
+        const {'@pizzapp.token': token } =parseCookies();
+
+        if(token){
+            api.get("/me").then(response => {
+                const { id, name, email} = response.data;
+                setUser({
+                    id, name, email,
+                })
+            })
+            .catch(error => {
+                //SE DEU ERRO ENTÃO O USUARIO SERA DESLOGADO
+                signOut();
+            })
+        }
+
+    },[])
 
     async function signIn({email, password}: SignInProps){
        try {
