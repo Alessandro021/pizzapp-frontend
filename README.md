@@ -52,11 +52,19 @@ git clone https://github.com/Alessandro021/pizzapp-frontend.git
 ```
 npm install
 ```
+ou
+```
+yarn
+```
 
 3. Iniciar o Projeto:
 
 ```
 npm run dev
+```
+ou
+```
+yarn dev
 ```
 
 ## Contribuindo
