@@ -1,38 +1,82 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# PizzApp 
 
-## Getting Started
+![React](https://img.shields.io/badge/React-17.0.2-blue)
+![Next.js](https://img.shields.io/badge/Next.js-10.1.3-blue)
+![Axios](https://img.shields.io/badge/Axios-0.21.1-blue)
 
-First, run the development server:
+Este repositório contém o código-fonte do projeto **PizzApp** desenvolvido durante o curso **"Projeto Completo NodeJS, React, React Native, TypeScript"** da Udemy.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+
+## O que é PizzApp?
+<p align="justify">
+O PizzApp é um sistema web de pizzaria desenvolvido com as tecnologias ReactJS, Next.js e Axios. Ele foi criado para facilitar o processo de pedido e preparo de pizzas, permitindo que o garçom possa fazer os pedidos e a cozinha saiba quais são os produtos que deve preparar.
+</p>
+
+
+<p align="justify">
+O sistema consiste em três partes principais: o frontend, o backend e o aplicativo mobile. O frontend é responsável pela interface com o usuário, exibindo os produtos disponíveis e permitindo que o garçom faça os pedidos. O backend é responsável por gerenciar os pedidos, armazenando as informações em um banco de dados e enviando as notificações para a cozinha. Já o aplicativo mobile é utilizado pela cozinha para visualizar os pedidos que devem ser preparados.
+</p>
+
+## Tecnologias Utilizadas
+
+O PizzApp foi desenvolvido usando as seguintes tecnologias:
+
+- ReactJS
+- Next
+- Axios
+- TypeScript
+
+## Funcionalidades
+
+O PizzApp conta com as seguintes funcionalidades:
+
+- Cadastro e login de usuários
+- Visualização do cardápio completo
+- Criação e gerenciamento de pedidos
+- Acompanhamento do status dos pedidos em tempo real
+- Visualização do histórico de pedidos
+- E muito mais!
+
+## Como Usar?
+
+Para executar o PizzApp, você deve primeiro clonar o repositório, instalar as dependências e, em seguida, iniciar o projeto.
+
+1. Clonar o repositório:
+
+```
+git clone https://github.com/Alessandro021/pizzapp-frontend.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Instalar as Dependências:
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+```
+npm install
+```
+ou
+```
+yarn
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+3. Iniciar o Projeto:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```
+npm run dev
+```
+ou
+```
+yarn dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Contribuindo
 
-## Learn More
+1. Faça um fork do projeto
+2. Crie uma branch para sua feature (`git checkout -b feature/nova-feature`)
+3. Commit suas alterações (`git commit -am 'Adicionando nova feature'`)
+4. Faça um push para a branch (`git push origin feature/nova-feature`)
+5. Abra um Pull Request
 
-To learn more about Next.js, take a look at the following resources:
+## :rocket: Resultado
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Depois de seguir os passos acima, você pode acessar o PizzApp no endereço: `http://localhost:3000`. 
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![PizzApp](https://github.com/Alessandro021/pizzapp-frontend/blob/master/docs/pizzapp-screenshot.png)
