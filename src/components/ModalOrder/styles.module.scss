@@ -1,0 +1,50 @@
+.conatiner{
+    width: 620px;
+    background-color: var(--dark-700);
+    color: var(--white);
+    h2{
+        margin: 1rem 0;
+    }
+}
+
+.containerItem{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+
+    strong{
+        color: var(--green-900)
+    }
+}
+
+.description{
+    margin-top: 0.5rem;
+    //ESSA OPÇÂO É PARA EVITAR QUE O TEXTO ULTRAPASSE O MODAL.
+    word-break: break-all;
+}
+
+.buttonOrder{
+    margin-top: 1.5rem;
+    background-color: rgba(0,0,0, 40%);
+    border: 0;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    color: var(--red-900);
+}
+
+.table{
+    color: var(--green-900);
+    font-size: 1.3rem;
+}
+
+@media screen  and (max-width: 700px){
+    .conatiner{
+        width: 400px;
+    }
+}
+
+@media screen  and (max-width: 550px){
+    .conatiner{
+        width: 300px;
+    }
+}
